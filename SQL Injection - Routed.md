@@ -23,6 +23,7 @@ Normally this would return an error, but here it returns the information of id 1
 ![alt text](image-8.png)
 
 So we can assume the output of this query is fed into a second query — in other words, this is a routed injection.
+
 The backend logic may looks like this:
 
 ```sql
