@@ -32,6 +32,7 @@ SELECT id FROM users WHERE login = '[input]';
 
 -- Query 2: uses Query 1's result to fetch what's displayed
 SELECT login, email FROM users WHERE id = [result of Query 1];
+```
 
 When we send `a' union select 1-- -`, Query 1 returns `1` (we control its output via UNION), and Query 2 then runs `... WHERE id = 1`, showing user 1's data.
 
